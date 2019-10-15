@@ -11,7 +11,8 @@ services:
       - test-net
     ports:
       - "5433:5432"
-
+    volumes:
+      - ./postgres/init:/docker-entrypoint-initdb.d
   flask:
     build: ./flask
     container_name: pytest
