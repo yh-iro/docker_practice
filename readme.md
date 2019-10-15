@@ -10,11 +10,6 @@ dockerを初めて使う練習のため、設定ファイルの一つ一つの�
 ```
 cd docker-practice
 docker-compose up -d
-
-docker-compose exec postgres psql postgres postgres
-
-postgres=# create table meibo (id serial, name text);
-postgres=# insert into meibo (id, name) values (1, 'hoge');
 ```
 
 then access localhost:5000 with host PC's browser and check if the result of sql is shown.
